@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IMAGE GOT FOUND</title>
+
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_url') ?>/assets/images/fortgeorgebrewery-favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: "lucida grande", lucida, tahoma, sans-serif;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    h1:not(:first-child) {
+      margin-top: 100px;
+    }
+    h2:not(:first-child),
+    h3:not(:first-child) {
+      margin-top: 50px;
+    }
+
+    .wrapper {
+      margin: 0 auto 100px;
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+
+<section>
+  <div class="wrapper">
+
+    <h1>IMAGE GOT FOUND</h1>
+
+    <h2>Background Image</h2>
+
+    <div id="bg-img-01">
+      <p>Lorem Ipsum Dolor.</p>
+    </div>
+
+    <style>
+      #bg-img-01 {
+        background-image: url('https://picsum.photos/1280/720');
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        min-height: 400px;
+        width: 100%;
+      }
+    </style>
+
+
+    <h2>IMG tag</h2>
+
+    <div id="img-01-container">
+      <img id="img-01" src="https://picsum.photos/1280/720" alt="a placeholder image">
+      <!-- <img
+        id="img-01"
+        src="https://via.placeholder.com/1280x720/"
+        alt="A placeholder image"
+        srcset="
+          https://via.placeholder.com/480x320/ 480w,
+          https://via.placeholder.com/720x480/ 720w,
+          https://via.placeholder.com/1280x720/ 1280w,
+          https://via.placeholder.com/1920x1280/ 1920w,
+          https://via.placeholder.com/2560x1920/ 2560w"
+      > -->
+    </div>
+
+    <style>
+      #img-01 {
+        /* filter: grayscale(1) blur(2px); */
+        height: 400px;
+        object-fit: cover; /* fill, contain, cover */
+        width: 100%;
+      }
+    </style>
+
+
+    <h2>Picture</h2>
+
+    <picture id="picture-01">
+      <source media="(min-width:720px)" alt="Regular ol' jpg" srcset="https://via.placeholder.com/1280x720/">
+      <img alt="Default image" src="https://via.placeholder.com/320x240/">
+    </picture>
+
+    <style>
+      #picture-01 > * {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+      }
+    </style>
+
+  </div>
+</section>
+
+</body>
+</html>
